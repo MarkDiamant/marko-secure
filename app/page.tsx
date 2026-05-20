@@ -183,7 +183,7 @@ const fencingImages = [
       <footer className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
           <div>
-            © 2026 Marko a trading name of Avark Group Ltd
+            © 2026 Marko. A trading name of Avark Group Ltd.
           </div>
 
           <div className="flex flex-col gap-2 md:items-end">
