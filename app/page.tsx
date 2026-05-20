@@ -1,11 +1,11 @@
 export default function Home() {
   const fencingImages = [
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1600607687644-c7171b42498b?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1400&auto=format&fit=crop",
   ];
 
   return (
@@ -31,16 +31,16 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="max-w-3xl">
           <p className="text-cyan-300 font-medium mb-4">
-            Wooden fencing specialists
+            Domestic and commercial wooden fencing
           </p>
 
           <h2 className="text-5xl md:text-7xl font-bold leading-tight">
-            Strong, clean and reliable fencing work.
+            Secure fencing for homes, sites and developments.
           </h2>
 
           <p className="mt-8 text-lg text-white/70 leading-8">
-            From fence replacements to complete garden fencing projects, we
-            keep things simple and get the job done properly.
+            From garden fence replacements to larger boundary fencing projects,
+            we keep things simple, secure and properly finished.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -85,7 +85,7 @@ export default function Home() {
               <p className="text-cyan-300 font-medium mb-4">What we do</p>
 
               <h3 className="text-4xl font-bold">
-                Wooden fencing for homes and gardens.
+                Wooden fencing for private homes and larger sites.
               </h3>
 
               <div className="mt-10 grid grid-cols-1 gap-4 text-lg text-white/80">
@@ -96,6 +96,8 @@ export default function Home() {
                 <div>• Slatted fencing</div>
                 <div>• Gates</div>
                 <div>• Garden privacy fencing</div>
+                <div>• Site and development fencing</div>
+                <div>• Boundary fencing</div>
                 <div>• Fence repairs</div>
               </div>
             </div>
