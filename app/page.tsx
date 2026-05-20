@@ -1,11 +1,12 @@
 export default function Home() {
-  const fencingImages = [
-  "https://images.unsplash.com/photo-1622372738946-62e02505feb3?q=80&w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1616628182509-6c4b94b7c5d9?q=80&w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1400&auto=format&fit=crop",
+const fencingImages = [
+  "/fencing/Fence0.webp",
+  "/fencing/Fence1.png",
+  "/fencing/Fence2.jpg",
+  "/fencing/Fence3.jpg",
+  "/fencing/Fence4.jpg",
+  "/fencing/Fence5.jpg",
+  "/fencing/Fence6.jpg",
 ];
 
   return (
