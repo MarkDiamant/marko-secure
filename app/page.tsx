@@ -25,7 +25,7 @@ const fencingImages = [
 
           <a
             href="#contact"
-            className="mb-3 shrink-0 whitespace-nowrap rounded-full bg-cyan-400 px-4 py-3 text-center text-xs font-semibold leading-none text-black transition hover:bg-cyan-300 md:mb-4 md:px-5 md:text-sm"
+            className="mb-1 shrink-0 self-end whitespace-nowrap rounded-full bg-cyan-400 px-4 py-3 text-center text-xs font-semibold leading-none text-black transition hover:bg-cyan-300 md:mb-2 md:px-5 md:text-sm"
           >
             Request Quote
           </a>
