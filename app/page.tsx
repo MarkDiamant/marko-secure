@@ -14,18 +14,18 @@ const fencingImages = [
   return (
     <main className="min-h-screen bg-[#071827] text-white">
       <section className="border-b border-white/10 bg-[#0a2435]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-6 md:px-6 md:py-6">
-          <div className="flex items-center">
+        <div className="mx-auto flex max-w-7xl items-end justify-between gap-4 bg-[#0a2435] px-4 pb-5 pt-4 md:px-6 md:pb-6 md:pt-6">
+          <div className="flex items-end">
             <img
               src="/logo.jpeg"
               alt="Marko Secure"
-              className="h-44 w-auto object-contain md:h-48"
+              className="h-36 w-auto object-contain md:h-48"
             />
           </div>
 
           <a
             href="#contact"
-            className="shrink-0 whitespace-nowrap rounded-full bg-cyan-400 px-4 py-3 text-center text-xs font-semibold text-black transition hover:bg-cyan-300 md:px-5 md:text-sm"
+            className="mb-3 shrink-0 whitespace-nowrap rounded-full bg-cyan-400 px-4 py-3 text-center text-xs font-semibold leading-none text-black transition hover:bg-cyan-300 md:mb-4 md:px-5 md:text-sm"
           >
             Request Quote
           </a>
