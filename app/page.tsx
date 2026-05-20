@@ -14,12 +14,12 @@ const fencingImages = [
   return (
     <main className="min-h-screen bg-[#071827] text-white">
       <section className="border-b border-white/10 bg-[#0a2435]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-6 md:py-6">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-6 md:px-6 md:py-6">
           <div className="flex items-center">
             <img
               src="/logo.jpeg"
               alt="Marko Secure"
-              className="h-36 w-auto object-contain md:h-48"
+              className="h-44 w-auto object-contain md:h-48"
             />
           </div>
 
