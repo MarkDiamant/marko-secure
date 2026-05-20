@@ -14,9 +14,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Marko Secure",
-  description: "Secure Fencing & Gates",
+  description: "Secure fencing and gates for homes, sites and developments.",
   icons: {
     icon: "/favicon.jpeg",
+  },
+  openGraph: {
+    title: "Marko Secure",
+    description: "Secure fencing and gates for homes, sites and developments.",
+    url: "https://www.markosecure.com",
+    siteName: "Marko Secure",
+    images: [
+      {
+        url: "/fencing/Fence0.webp",
+        width: 1200,
+        height: 630,
+        alt: "Marko Secure fencing project",
+      },
+    ],
+    type: "website",
   },
 };
 
