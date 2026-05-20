@@ -188,7 +188,7 @@ const fencingImages = [
 
           <div className="flex flex-col gap-2 md:items-end">
             <div>info@markosecure.com</div>
-            <div>Run by Mark Diamant & Avi Mocton</div>
+            <div>Serving homes, sites & developments</div>
           </div>
         </div>
       </footer>
