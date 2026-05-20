@@ -19,7 +19,7 @@ const fencingImages = [
             <img
               src="/logo.jpeg"
               alt="Marko Secure"
-              className="h-28 w-auto object-contain md:h-40"
+              className="h-20 w-auto object-contain md:h-28"
             />
           </div>
 
@@ -32,7 +32,7 @@ const fencingImages = [
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-24">
+      <section className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-20">
         <div className="max-w-3xl">
           <p className="text-cyan-300 font-medium mb-4">
             Domestic and commercial wooden fencing
