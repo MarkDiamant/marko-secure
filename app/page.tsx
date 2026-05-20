@@ -15,21 +15,12 @@ const fencingImages = [
     <main className="min-h-screen bg-[#071827] text-white">
       <section className="border-b border-white/10">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-6 md:py-6">
-          <div className="flex min-w-0 items-center gap-3">
+          <div className="flex items-center">
             <img
               src="/logo.jpeg"
               alt="Marko Secure"
-              className="h-11 w-11 shrink-0 rounded-xl object-contain md:h-14 md:w-14"
+              className="h-28 w-auto object-contain md:h-40"
             />
-
-            <div className="min-w-0">
-              <h1 className="text-2xl font-bold leading-tight md:text-4xl">
-                Marko Secure
-              </h1>
-              <p className="mt-1 text-xs text-cyan-300 md:text-sm">
-                Secure Fencing & Gates
-              </p>
-            </div>
           </div>
 
           <a
