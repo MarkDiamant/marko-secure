@@ -20,17 +20,19 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Marko Secure",
-    description: "Secure fencing and gates for homes, sites and developments.",
+    description:
+      "Secure fencing and gates for homes, sites and developments.",
     url: "https://www.markosecure.com",
     siteName: "Marko Secure",
     images: [
       {
-        url: "/fencing/Fence0.webp",
+        url: "https://www.markosecure.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Marko Secure fencing project",
+        alt: "Marko Secure",
       },
     ],
+    locale: "en_GB",
     type: "website",
   },
 };
