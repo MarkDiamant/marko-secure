@@ -1,65 +1,191 @@
-import Image from "next/image";
-
 export default function Home() {
+  const fencingImages = [
+    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop",
+  ];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-[#071827] text-white">
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
+          <div>
+            <h1 className="text-3xl md:text-4xl font-bold">Marko Secure</h1>
+            <p className="text-sm text-cyan-300 mt-1">
+              Secure Fencing & Gates
+            </p>
+          </div>
+
+          <a
+            href="#contact"
+            className="rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-black transition hover:bg-cyan-300"
+          >
+            Request A Quote
+          </a>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-24">
+        <div className="max-w-3xl">
+          <p className="text-cyan-300 font-medium mb-4">
+            Wooden fencing specialists
           </p>
+
+          <h2 className="text-5xl md:text-7xl font-bold leading-tight">
+            Strong, clean and reliable fencing work.
+          </h2>
+
+          <p className="mt-8 text-lg text-white/70 leading-8">
+            From fence replacements to complete garden fencing projects, we
+            keep things simple and get the job done properly.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="#contact"
+              className="rounded-full bg-cyan-400 px-7 py-4 font-semibold text-black transition hover:bg-cyan-300"
+            >
+              Request A Quote
+            </a>
+
+            <a
+              href="#contact"
+              className="rounded-full border border-white/20 px-7 py-4 font-semibold transition hover:bg-white/10"
+            >
+              WhatsApp Photos For A Quote
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-24">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {fencingImages.map((image, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-3xl border border-white/10 bg-white/5"
+            >
+              <img
+                src={image}
+                alt="Fencing"
+                className="h-80 w-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-white/5">
+        <div className="mx-auto max-w-7xl px-6 py-24">
+          <div className="grid gap-12 md:grid-cols-2">
+            <div>
+              <p className="text-cyan-300 font-medium mb-4">What we do</p>
+
+              <h3 className="text-4xl font-bold">
+                Wooden fencing for homes and gardens.
+              </h3>
+
+              <div className="mt-10 grid grid-cols-1 gap-4 text-lg text-white/80">
+                <div>• Fence replacement</div>
+                <div>• Wooden fencing</div>
+                <div>• Concrete post fencing</div>
+                <div>• Feather edge fencing</div>
+                <div>• Slatted fencing</div>
+                <div>• Gates</div>
+                <div>• Garden privacy fencing</div>
+                <div>• Fence repairs</div>
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-white/10 bg-[#0c2235] p-8">
+              <p className="text-cyan-300 font-medium mb-4">
+                Fast estimates
+              </p>
+
+              <h3 className="text-3xl font-bold leading-tight">
+                Send us photos of the area for a quick quote.
+              </h3>
+
+              <p className="mt-6 text-white/70 leading-7">
+                WhatsApp photos, videos and rough measurements and we’ll come
+                back to you with a fast estimate.
+              </p>
+
+              <div className="mt-8 flex flex-col gap-4">
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  WhatsApp Number Coming Soon
+                </div>
+
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  Phone Number Coming Soon
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        className="mx-auto max-w-4xl px-6 py-24"
+      >
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12">
+          <p className="text-cyan-300 font-medium mb-4">Request a quote</p>
+
+          <h3 className="text-4xl font-bold">
+            Tell us about your fencing project.
+          </h3>
+
+          <form className="mt-10 grid gap-5">
+            <input
+              type="text"
+              placeholder="Your name"
+              className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+            <input
+              type="text"
+              placeholder="Phone number"
+              className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
+            />
+
+            <input
+              type="email"
+              placeholder="Email address"
+              className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
+            />
+
+            <textarea
+              placeholder="Tell us about the work needed"
+              rows={5}
+              className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
+            />
+
+            <button
+              type="submit"
+              className="rounded-full bg-cyan-400 px-7 py-4 font-semibold text-black transition hover:bg-cyan-300"
+            >
+              Request Quote
+            </button>
+          </form>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <footer className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
+          <div>
+            © 2026 Marko Secure
+          </div>
+
+          <div className="flex flex-col gap-2 md:items-end">
+            <div>info@markosecure.com</div>
+            <div>Run by Mark Diamant & Avi Mocton</div>
+          </div>
+        </div>
+      </footer>
+    </main>
   );
 }
