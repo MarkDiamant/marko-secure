@@ -14,30 +14,40 @@ const fencingImages = [
   return (
     <main className="min-h-screen bg-[#071827] text-white">
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
-          <div>
-            <h1 className="text-3xl md:text-4xl font-bold">Marko Secure</h1>
-            <p className="text-sm text-cyan-300 mt-1">
-              Secure Fencing & Gates
-            </p>
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-6 md:py-6">
+          <div className="flex min-w-0 items-center gap-3">
+            <img
+              src="/logo.jpeg"
+              alt="Marko Secure"
+              className="h-11 w-11 shrink-0 rounded-xl object-contain md:h-14 md:w-14"
+            />
+
+            <div className="min-w-0">
+              <h1 className="text-2xl font-bold leading-tight md:text-4xl">
+                Marko Secure
+              </h1>
+              <p className="mt-1 text-xs text-cyan-300 md:text-sm">
+                Secure Fencing & Gates
+              </p>
+            </div>
           </div>
 
           <a
             href="#contact"
-            className="rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-black transition hover:bg-cyan-300"
+            className="shrink-0 whitespace-nowrap rounded-full bg-cyan-400 px-4 py-3 text-center text-xs font-semibold text-black transition hover:bg-cyan-300 md:px-5 md:text-sm"
           >
-            Request A Quote
+            Get Quote
           </a>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-24">
+      <section className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-24">
         <div className="max-w-3xl">
           <p className="text-cyan-300 font-medium mb-4">
             Domestic and commercial wooden fencing
           </p>
 
-          <h2 className="text-5xl md:text-7xl font-bold leading-tight">
+          <h2 className="text-4xl font-bold leading-tight md:text-7xl">
             Secure fencing for homes, sites and developments.
           </h2>
 
@@ -64,7 +74,7 @@ const fencingImages = [
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-4 pb-14 md:px-6 md:pb-24">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {fencingImages.map((image, index) => (
             <div
@@ -82,7 +92,7 @@ const fencingImages = [
       </section>
 
       <section className="border-y border-white/10 bg-white/5">
-        <div className="mx-auto max-w-7xl px-6 py-24">
+        <div className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-24">
           <div className="grid gap-12 md:grid-cols-2">
             <div>
               <p className="text-cyan-300 font-medium mb-4">What we do</p>
@@ -135,7 +145,7 @@ const fencingImages = [
 
       <section
         id="contact"
-        className="mx-auto max-w-4xl px-6 py-24"
+        className="mx-auto max-w-4xl px-4 py-14 md:px-6 md:py-24"
       >
         <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12">
           <p className="text-cyan-300 font-medium mb-4">Request a quote</p>
