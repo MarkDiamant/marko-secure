@@ -7,6 +7,8 @@ const fencingImages = [
   "/fencing/Fence4.jpg",
   "/fencing/Fence5.jpg",
   "/fencing/Fence6.jpg",
+  "/fencing/Fence7.webp",
+  "/fencing/Fence8.jpg",
 ];
 
   return (
