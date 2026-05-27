@@ -166,47 +166,38 @@ export default function Home() {
             Tell us about your fencing project.
           </h3>
 
-          <form
-            action="mailto:info@markosecure.com"
-            method="post"
-            encType="text/plain"
-            className="mt-10 grid gap-5"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Your name"
-              className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
-            />
+<div className="mt-10 grid gap-5">
+  <input
+    type="text"
+    placeholder="Your name"
+    className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
+  />
 
-            <input
-              type="text"
-              name="phone"
-              placeholder="Phone number"
-              className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
-            />
+  <input
+    type="text"
+    placeholder="Phone number"
+    className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
+  />
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Email address"
-              className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
-            />
+  <input
+    type="email"
+    placeholder="Email address"
+    className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
+  />
 
-            <textarea
-              name="message"
-              placeholder="Tell us about the work needed"
-              rows={5}
-              className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
-            />
+  <textarea
+    placeholder="Tell us about the work needed"
+    rows={5}
+    className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
+  />
 
-            <button
-              type="submit"
-              className="rounded-full bg-cyan-400 px-7 py-4 text-center font-semibold text-black transition hover:bg-cyan-300"
-            >
-              Request Quote
-            </button>
-          </form>
+  <a
+    href="mailto:info@markosecure.com?subject=Fencing%20quote%20request"
+    className="rounded-full bg-cyan-400 px-7 py-4 text-center font-semibold text-black transition hover:bg-cyan-300"
+  >
+    Request Quote
+  </a>
+</div>
         </div>
       </section>
 
