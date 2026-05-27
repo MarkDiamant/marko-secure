@@ -1,3 +1,6 @@
+const whatsappLink =
+  "https://wa.me/447756969075?text=Hi%2C%20I%E2%80%99d%20like%20to%20find%20out%20more%20about%20your%20services.";
+
 export default function Home() {
 const fencingImages = [
   "/fencing/Fence0.webp",
@@ -23,12 +26,14 @@ const fencingImages = [
             />
           </div>
 
-          <a
-            href="#contact"
-            className="mb-1 shrink-0 self-end whitespace-nowrap rounded-full bg-cyan-400 px-4 py-3 text-center text-xs font-semibold leading-none text-black transition hover:bg-cyan-300 md:mb-2 md:px-5 md:text-sm"
-          >
-            Request Quote
-          </a>
+<a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mb-1 shrink-0 self-end whitespace-nowrap rounded-full bg-cyan-400 px-4 py-3 text-center text-xs font-semibold leading-none text-black transition hover:bg-cyan-300 md:mb-2 md:px-5 md:text-sm"
+>
+  Request Quote
+</a>
         </div>
       </section>
 
@@ -48,19 +53,23 @@ const fencingImages = [
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="#contact"
-              className="rounded-full bg-cyan-400 px-7 py-4 font-semibold text-black transition hover:bg-cyan-300"
-            >
-              Request A Quote
-            </a>
+<a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-full bg-cyan-400 px-7 py-4 font-semibold text-black transition hover:bg-cyan-300"
+>
+  Request A Quote
+</a>
 
-            <a
-              href="#contact"
-              className="rounded-full border border-white/20 px-7 py-4 font-semibold transition hover:bg-white/10"
-            >
-              WhatsApp Photos For A Quote
-            </a>
+<a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-full border border-white/20 px-7 py-4 font-semibold transition hover:bg-white/10"
+>
+  WhatsApp Photos For A Quote
+</a>
           </div>
         </div>
       </section>
@@ -120,15 +129,23 @@ const fencingImages = [
                 back to you with a fast estimate.
               </p>
 
-              <div className="mt-8 flex flex-col gap-4">
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  WhatsApp Number Coming Soon
-                </div>
+<div className="mt-8 flex flex-col gap-4">
+  <a
+    href={whatsappLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
+  >
+    WhatsApp: +44 7756 969075
+  </a>
 
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  Phone Number Coming Soon
-                </div>
-              </div>
+  <a
+    href="tel:+447756969075"
+    className="rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
+  >
+    Call: +44 7756 969075
+  </a>
+</div>
             </div>
           </div>
         </div>
@@ -170,12 +187,14 @@ const fencingImages = [
               className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none"
             />
 
-            <button
-              type="submit"
-              className="rounded-full bg-cyan-400 px-7 py-4 font-semibold text-black transition hover:bg-cyan-300"
-            >
-              Request Quote
-            </button>
+<a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-full bg-cyan-400 px-7 py-4 text-center font-semibold text-black transition hover:bg-cyan-300"
+>
+  Request Quote
+</a>
           </form>
         </div>
       </section>
@@ -186,10 +205,13 @@ const fencingImages = [
             © 2026 Marko. A trading name of Avark Group Ltd.
           </div>
 
-          <div className="flex flex-col gap-2 md:items-end">
-            <div>info@markosecure.com</div>
-            <div>Serving homes, sites & developments</div>
-          </div>
+<div className="flex flex-col gap-2 md:items-end">
+  <div>info@markosecure.com</div>
+  <a href="tel:+447756969075" className="transition hover:text-white">
+    +44 7756 969075
+  </a>
+  <div>Serving homes, sites & developments</div>
+</div>
         </div>
       </footer>
     </main>
