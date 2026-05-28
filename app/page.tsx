@@ -165,7 +165,7 @@ export default function Home() {
           <h3 className="text-4xl font-bold">Tell us about your fencing project.</h3>
 
 <p className="mt-4 text-white/70">
-  For photos or videos of the area, please use{" "}
+  To send photos or videos of the area, please use{" "}
   <a
     href={whatsappLink}
     target="_blank"
