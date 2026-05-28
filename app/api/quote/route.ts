@@ -36,7 +36,7 @@ ${message}
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "Marko Secure <quotes@markosecure.com>",
+      from: "Marko Secure <onboarding@resend.dev>",
       to: "info@markosecure.com",
       subject: "New fencing quote request",
       text: emailBody,
