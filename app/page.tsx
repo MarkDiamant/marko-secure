@@ -164,6 +164,18 @@ export default function Home() {
 
           <h3 className="text-4xl font-bold">Tell us about your fencing project.</h3>
 
+<p className="mt-4 text-white/70">
+  For photos or videos of the area, please use{" "}
+  <a
+    href={whatsappLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-cyan-300 underline underline-offset-4 hover:text-cyan-200"
+  >
+    WhatsApp Photos For A Quote
+  </a>.
+</p>
+
           <form onSubmit={handleSubmit} className="mt-10 grid gap-5">
             <input name="name" type="text" placeholder="Your name" required className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none" />
             <input name="phone" type="text" placeholder="Phone number" required className="rounded-2xl border border-white/10 bg-[#071827] px-5 py-4 outline-none" />
