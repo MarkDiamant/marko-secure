@@ -12,6 +12,7 @@ export default function Home() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
+  const [errorMessage, setErrorMessage] = useState("");
 
   const fencingImages = [
     "/fencing/Fence0.webp",
@@ -28,29 +29,38 @@ export default function Home() {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("sending");
+    setErrorMessage("");
 
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
 
-    const response = await fetch("/api/quote", {
-      method: "POST",
-      body: JSON.stringify({
-        name: formData.get("name"),
-        phone: formData.get("phone"),
-        email: formData.get("email"),
-        message: formData.get("message"),
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    try {
+      const response = await fetch("/api/quote", {
+        method: "POST",
+        body: JSON.stringify({
+          name: formData.get("name"),
+          phone: formData.get("phone"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    if (!response.ok) {
+      if (!response.ok) {
+        const errorData = await response.json();
+        setErrorMessage(errorData.error || "Unknown error");
+        setStatus("error");
+        return;
+      }
+
+      form.reset();
+      setStatus("sent");
+    } catch {
+      setErrorMessage("Please try again or email info@markosecure.com directly.");
       setStatus("error");
-      return;
     }
-
-    event.currentTarget.reset();
-    setStatus("sent");
   }
 
   return (
@@ -172,7 +182,7 @@ export default function Home() {
 
             {status === "error" && (
               <p className="rounded-2xl border border-red-300/30 bg-red-300/10 p-4 text-center text-red-100">
-                Sorry, something went wrong. Please email info@markosecure.com directly.
+                Sorry, something went wrong. {errorMessage}
               </p>
             )}
           </form>
