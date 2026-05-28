@@ -44,9 +44,16 @@ ${message}
     }),
   });
 
-  if (!response.ok) {
-    return NextResponse.json({ error: "Email failed" }, { status: 500 });
-  }
+if (!response.ok) {
+  const errorText = await response.text();
+
+  return NextResponse.json(
+    {
+      error: errorText,
+    },
+    { status: 500 }
+  );
+}
 
   return NextResponse.json({ success: true });
 }
