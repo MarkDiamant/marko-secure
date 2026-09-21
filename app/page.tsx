@@ -212,7 +212,7 @@ export default function Home() {
             <div>Serving homes, sites & developments</div>
             <a href="https://diamantsolutions.co.uk" target="_blank" rel="noopener noreferrer" className="mt-2 flex flex-col gap-1 transition hover:text-white md:items-end">
               <span className="flex items-center gap-2"><span>Built by</span><strong className="text-white/80">Diamant Solutions</strong></span>
-              <span className="text-xs">Websites • CRM Systems • Direction</span>
+              <span className="text-xs">Websites • Business Software • Direction</span>
             </a>
           </div>
         </div>
